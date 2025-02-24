@@ -51,7 +51,7 @@ class FileComponent(BaseFileComponent):
         """
 
         def process_file(file_path: str, *, silent_errors: bool = False) -> Data | None:
-            """Processes a single file and returns its Data object."""
+            """Processes a single file and returns its Data object. nothing big"""
             try:
                 return parse_text_file_to_data(file_path, silent_errors=silent_errors)
             except FileNotFoundError as e:
